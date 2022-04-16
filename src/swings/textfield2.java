@@ -4,12 +4,16 @@ import java.awt.event.*;
 public class textfield2 extends Frame implements ActionListener {
     TextField tf1,tf2,tf3;
     Button b1,b2;
-    Label l2;
+    Label l2,l1,l3;
     textfield2(){
-
-
+l2=new Label("enter 1st number");
+l2.setBounds(50,25,150,20);
+        l1=new Label("enter 2nd number");
+        l1.setBounds(50,75,150,20);
+        l3=new Label("result");
+        l3.setBounds(50,125,150,20);
         tf1=new TextField();
-        tf1.setBounds(50, 50, 250, 20);
+        tf1.setBounds(50, 50, 150, 20);
         tf2=new TextField();
         tf2.setBounds(50, 100, 150, 20);
         tf3=new TextField();
@@ -20,10 +24,13 @@ public class textfield2 extends Frame implements ActionListener {
         b2.setBounds(120,200,50,50);
         b1.addActionListener(this);
         b2.addActionListener(this);
-        add(tf1);add(tf2);add(tf3);add(b1);add(b2);
+        add(tf1);add(tf2);add(tf3);add(b1);add(b2);add(l2);add(l1);add(l3);
         setSize(400,400);
+
+
         setLayout(null);
         setVisible(true);
+
 
 
 
