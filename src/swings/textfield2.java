@@ -6,7 +6,7 @@ public class textfield2 extends Frame implements ActionListener {
     Button b1,b2;
     Label l2,l1,l3;
     textfield2(){
-l2=new Label("enter 1st number");
+l2=new Label("enter First number");
 l2.setBounds(50,25,150,20);
         l1=new Label("enter 2nd number");
         l1.setBounds(50,75,150,20);
